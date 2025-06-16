@@ -78,11 +78,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UP_ARROW     &trans  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH             &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp DOWN_ARROW   &trans  &kp N7        &kp N8        &kp N9        &kp EQUAL             &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &kp LEFT_ARROW   &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans     &sys_reset    &trans          &trans        &trans        &trans          &kp RIGHT_ARROW  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD            &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &kp ENTER        &trans  &trans        &trans        &trans        &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UP_ARROW     &trans  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH             &trans
+&trans     &trans        &trans        &trans        &trans        &trans          &kp DOWN_ARROW   &trans  &kp N7        &kp N8        &kp N9        &kp EQUAL             &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &kp LEFT_ARROW   &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans     &trans        &trans        &trans        &trans        &trans          &kp RIGHT_ARROW  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD            &trans
+&trans     &trans        &trans        &trans        &trans        &trans          &kp ENTER        &tog 3  &trans        &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -90,11 +90,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &out OUT_USB  &out OUT_BLE    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &sys_reset    &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &bootloader   &trans          &trans  &trans  &trans    &trans  &tog 2  &trans  &trans  &trans  &bootloader
             >;
         };
     };
